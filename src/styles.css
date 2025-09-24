@@ -58,7 +58,17 @@ body {
     background-color: var(--rose-100);
 }
 
-/* for text */
+.container {
+    width: 85%;
+    margin: 4rem auto;
+}
+
+/* TEXT */
+
+p {
+    font-weight: var(--font-weight-semibold);
+    cursor: pointer;
+}
 
 h1 {
     font-size: 30px;
@@ -76,6 +86,8 @@ h3 {
     color: var(--rose-900);
 }
 
+
+
 .dessert-category {
     font-size: 14px;
     color: var(--rose-300);
@@ -84,12 +96,61 @@ h3 {
 .price,
 .count {
     color: var(--color-red);
+    font-weight: var(--font-weight-bold);
+}
+
+.span-regular {
+    color: var(--rose-500);
+}
+
+.span-semibold {
+    color: var(--rose-500);
+    font-weight: var(--font-weight-semibold);
 }
 
 /* button */
 
+button {
+    font-family: var(--font-family-base);
+    font-weight: var(--font-weight-semibold);
+    cursor: pointer;
+}
+
 .btn {
     padding: 0.6rem 0rem;
-    border-radius: 30px;
+    border-radius: 24px;
     border: none;
+}
+
+
+
+.btn--add {
+    width: 120px;
+    border-radius: 24px;
+    border: 1px solid var(--rose-400);
+    background-color: white;
+    cursor: pointer;
+    color: var(--rose-900);
+    font-weight: var(--font-weight-semibold);
+    font-size: 14px;
+    transition: all 0.2s ease-in-out;
+
+    /* For aligning icon and text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.btn--add:hover {
+    border-color: var(--color-red);
+    color: var(--color-red);
+}
+
+.btn--confirm {
+    background-color: var(--color-red);
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 1rem;
 }
