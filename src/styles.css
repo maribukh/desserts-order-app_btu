@@ -156,7 +156,8 @@ button {
 }
 
 app-dessert-item {
-    width: 31%;
+    display: block;
+    width: 100% ;
 }
 
 .d-none {

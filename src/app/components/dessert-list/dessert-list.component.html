@@ -1,7 +1,7 @@
 <div class="container">
   <h1>Desserts</h1>
   <div class="dessert-list-container">
-    <div *ngFor="let dessert of desserts">
+    <div class="cards" *ngFor="let dessert of desserts">
       <app-dessert-item [dessert]="dessert"></app-dessert-item>
     </div>
   </div>
