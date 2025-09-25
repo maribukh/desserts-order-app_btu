@@ -1,0 +1,8 @@
+.dessert-list-container {
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid red;
+    margin-top: 2rem;
+}

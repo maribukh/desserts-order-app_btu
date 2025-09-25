@@ -1,0 +1,13 @@
+.card {
+    border: 1px solid red;
+}
+
+.card .top {
+    width: 100%;
+    position: relative;
+}
+
+.card .top img {
+    border-radius: 8px;
+
+}

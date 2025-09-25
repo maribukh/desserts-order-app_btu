@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
+import { DessertItemComponent } from '../dessert-item/dessert-item.component';
 
 @Component({
   selector: 'app-dessert-list',
-  imports: [],
+  imports: [DessertItemComponent],
   templateUrl: './dessert-list.component.html',
-  styleUrl: './dessert-list.component.css'
+  styleUrl: './dessert-list.component.css',
 })
-export class DessertListComponent {
-
-}
+export class DessertListComponent {}
