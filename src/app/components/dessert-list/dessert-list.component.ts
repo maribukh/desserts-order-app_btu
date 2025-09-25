@@ -16,9 +16,14 @@ export class DessertListComponent {
   constructor(private http: HttpClient) {}
 
   ngOnInit() {
-    this.http.get<any[]>('assets/data.json').subscribe((data: any[]) => {
-      this.desserts = data;
-      console.log('✅', this.desserts);
+    this.http.get<any[]>('/assets/data.json').subscribe({
+      next: (data) => {
+        this.desserts = data;
+        console.log('✅ Succied:', this.desserts);
+      },
+      error: (err) => {
+        console.error('❌ Error:', err);
+      },
     });
   }
 }
