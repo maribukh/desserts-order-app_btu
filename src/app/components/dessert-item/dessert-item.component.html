@@ -1,15 +1,18 @@
 <div class="card">
   <div class="top">
-    <img src="../../assets/images/image-waffle-desktop.jpg" alt="dessert" />
+    <img [src]="dessert.image" alt="{{ dessert.title }}" />
+
     <button class="btn btn--add">
-      <img src="../../assets/images/icon-add-to-cart.svg" alt="cart" />Add to
-      Cart
+      <img src="assets/images/icon-add-to-cart.svg" alt="cart" />
+      <p>Add to Cart</p>
     </button>
+
     <button class="d-none"><img src="" alt="" />4</button>
   </div>
+
   <div class="description">
-    <p class="dessert-category">Waffie</p>
-    <p>Waffie with Berries</p>
-    <div class="price">$6.50</div>
+    <p class="dessert-category">{{ dessert.category }}</p>
+    <p>{{ dessert.name }}</p>
+    <div class="price">\${{ dessert.price }}</div>
   </div>
 </div>

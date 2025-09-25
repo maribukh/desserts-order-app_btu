@@ -155,6 +155,10 @@ button {
     padding: 1rem;
 }
 
+app-dessert-item {
+    width: 31%;
+}
+
 .d-none {
     display: none;
 }

@@ -1,11 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-dessert-item',
-  imports: [],
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './dessert-item.component.html',
-  styleUrl: './dessert-item.component.css'
+  styleUrls: ['./dessert-item.component.css'],
 })
 export class DessertItemComponent {
-
+  @Input() dessert!: any;
 }

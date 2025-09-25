@@ -1,8 +1,7 @@
 <div class="container">
   <h1>Desserts</h1>
   <div class="dessert-list-container">
-    <app-dessert-item></app-dessert-item>
-    <app-dessert-item></app-dessert-item>
-    <app-dessert-item></app-dessert-item>
+    <app-dessert-item *ngFor="let dessert of desserts" [dessert]="dessert">
+    </app-dessert-item>
   </div>
 </div>
