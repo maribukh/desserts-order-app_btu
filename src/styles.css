@@ -58,9 +58,12 @@ body {
     background-color: var(--rose-50);
 }
 
-.container {
-    width: 85%;
-    margin: 4rem auto;
+.dessert-page {
+  display: flex;
+  gap: 20px;
+  align-items: space-between;
+  max-width: 1200px;
+  margin: 50px auto;
 }
 
 /* TEXT */
@@ -162,4 +165,24 @@ app-dessert-item {
 
 .d-none {
     display: none;
+}
+
+
+
+
+/* cart styles */
+.cart {
+  background: #fff;
+  padding: 20px 20px 40px 20px;
+  border-radius: 10px;
+  width: 400px;
+}
+
+.cart-empty {
+  text-align: center;
+  color: var(--rose-500);
+}
+
+.cart-empty img {
+  margin: 40px 0 20px;
 }
