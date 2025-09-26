@@ -26,3 +26,25 @@
     width: 16px;
     height: 16px;
 }
+
+.btn--quanity {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--color-red);
+    border: var(--color-red);
+
+    color: var(--rose-50);
+}
+
+
+.btn--dec,
+.btn--inc {
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.5px solid var(--rose-50);
+    border-radius: 100%;
+}
