@@ -1,0 +1,28 @@
+.card {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.card .top {
+    width: 100%;
+    margin-bottom: 2.5rem;
+    position: relative;
+}
+
+.card .top img {
+    width: 100%;
+    border-radius: 12px;
+
+}
+
+.card .btn--add {
+    position: absolute;
+    bottom: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.card .top button img {
+    width: 16px;
+    height: 16px;
+}

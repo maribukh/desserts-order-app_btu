@@ -1,1 +1,18 @@
-<p>dessert-item works!</p>
+<div class="card">
+  <div class="top">
+    <img [src]="dessert.image.desktop" [alt]="dessert.name" />
+
+    <button class="btn btn--add">
+      <img src="assets/images/icon-add-to-cart.svg" alt="cart" />
+      <p>Add to Cart</p>
+    </button>
+
+    <button class="d-none"><img src="" alt="" />4</button>
+  </div>
+
+  <div class="description">
+    <p class="dessert-category">{{ dessert.category }}</p>
+    <p>{{ dessert.name }}</p>
+    <div class="price">${{ dessert.price }}</div>
+  </div>
+</div>
