@@ -3,8 +3,6 @@ import { CommonModule } from '@angular/common';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { DessertItemComponent } from '../dessert-item/dessert-item.component';
 
-
-
 @Component({
   selector: 'app-dessert-list',
   standalone: true,
