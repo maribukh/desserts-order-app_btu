@@ -20,6 +20,7 @@
     bottom: -14px;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 10;
 }
 
 .card .top button img {
@@ -33,10 +34,12 @@
     justify-content: space-around;
     background-color: var(--color-red);
     border: var(--color-red);
-
     color: var(--rose-50);
 }
 
+.btn--quanity p {
+    font-weight: var(--font-weight-regular);
+}
 
 .btn--dec,
 .btn--inc {
