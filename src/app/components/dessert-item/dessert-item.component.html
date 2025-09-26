@@ -2,12 +2,20 @@
   <div class="top">
     <img [src]="dessert.image.desktop" [alt]="dessert.name" />
 
-    <button class="btn btn--add">
+    <button class="btn btn--add" *ngIf="quantity === 0" (click)="addToCart()">
       <img src="assets/images/icon-add-to-cart.svg" alt="cart" />
       <p>Add to Cart</p>
     </button>
 
-    <button class="d-none"><img src="" alt="" />4</button>
+    <button class="btn btn--add btn--quanity" *ngIf="quantity > 0">
+      <div class="btn--dec" (click)="decrement()">
+        <p>-</p>
+      </div>
+      <div class="quantity">{{ quantity }}</div>
+      <div class="btn--inc" (click)="increment()">
+        <p>+</p>
+      </div>
+    </button>
   </div>
 
   <div class="description">
